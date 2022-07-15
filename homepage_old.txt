@@ -1,0 +1,149 @@
+{% extends "nav_bar.html" %}
+
+{% block title %}Homepage{% endblock %}
+
+
+{% block head %}
+    <style>
+        body {
+            background-image: url("static/chair.jpg");
+            background-color: #cccccc;   
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        .wrap {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .button {
+            border: none;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0px 200px;
+            cursor: pointer;
+            min-width: 3px;
+            min-height: 60px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            font-weight: 700;
+            color: #313133;
+            background: linear-gradient(90deg, rgba(149, 21, 235, 0.051) 0%, rgba(209, 146, 79, 0.023) 100%);
+            border-radius: 1000px;
+            box-shadow: 12px 12px 24px rgba(235, 149, 21, 0);
+            transition: all 0.3s ease-in-out 0s;
+            outline: none;
+            position: relative;
+            
+        }
+        .button5 {border-radius: 100%;}
+          
+        button::before {
+          content: '';
+            border-radius: 1000px;
+            min-width: calc(70px + 15px);
+            min-height: calc(75px);
+            border: 3px solid #00FFCB;
+            box-shadow: 0 0 60px rgba(0,255,203,.64);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all .3s ease-in-out 0s;
+        }
+          
+        .button:hover, .button:focus {
+            color: #313133;
+            transform: translateY(-6px);
+        }
+          
+        button:hover::before, button:focus::before {
+            opacity: 1;
+        }
+          
+        button::after {
+            content: '';
+            width: 30px; height: 30px;
+            border-radius: 100%;
+            border: 6px solid rgba(235, 142, 21, 0.932);
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring 1.5s infinite;
+        }
+          
+        button:hover::after, button:focus::after {
+            animation: none;
+            display: none;
+        }
+          
+        @keyframes ring {
+            0% {
+              width: 30px;
+              height: 30px;
+              opacity: 1;
+            }
+            100% {
+              width: 300px;
+              height: 300px;
+              opacity: 0;
+            }
+        }
+
+        #btn_posi {
+            position: fixed;
+            bottom: 50px;
+            left: -150px;
+        }
+
+        .head{
+            font-family: "Times New Roman", Times, serif;
+            position: fixed;
+            bottom: 40%;
+            left: 6%;
+            color:rgb(235, 142, 21);
+            font-size: 700%;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgba(255, 255, 255, 0.848);
+          }
+     </style>
+    <body>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    </body>
+{% endblock %}
+{%block body%}
+<h1 class="head">We sale <br> only the best..!!</h1>
+<!-- <div class="button" > -->
+<div class="" id="btn_posi">
+      
+    <button class="button">
+            <a type="button" style='font-size:50px' title="Contact Us" class="far">&#xf4ad;</a>
+    </button> 
+</div>
+    <!-- <button>
+        <a href="#" title="Twitter"><i class="far "> &#xf4ad; </i></a>
+  </button>
+</div> -->
+
+{% endblock%}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- form one starts -->
+<form id="activitiesform1">
+    <div class="activitiesfield1">
+        <input type="checkbox" name="activitiescb" value="activities" id="firstdog_activity1" class="activitiescb">
+        <label for="firstdog_activity1"></label>
+    </div>
+    
+</form>
+<!-- form one ends -->
+
+<!-- form two starts -->
+<form id="activitiesform2">
+    <div class="activitiesfield1">
+        <label for="seconddog_activity1"></label>
+        <input type="checkbox" name="activitiescb" value="activities" id="seconddog_activity1" class="activitiescb" title="" placeholder="">
+        
+    </div>
+</form>
+<!-- form two ends -->
+
+<script>
+    $(function() {
+        $('.activitiescb').on('change', function() {
+            this.checked = true;
+            $(this).closest('form').find('.activitiescb').not(this).prop('checked', false);
+        });
+    });
+</script>
+</body>
+</html>

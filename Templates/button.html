@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Stylish Button</title>
+    <style>
+        html, body {
+            height: 100%;
+          }
+
+          .wrap {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .button {
+          
+            border: none;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0px 200px;
+            cursor: pointer;
+            min-width: 3px;
+            min-height: 60px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            font-weight: 700;
+            color: #313133;
+            background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+            border-radius: 1000px;
+            box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+            transition: all 0.3s ease-in-out 0s;
+            outline: none;
+            position: relative;
+            
+          }
+          .button5 {border-radius: 100%;}
+          
+          
+          
+          button::before {
+          content: '';
+            border-radius: 1000px;
+            min-width: calc(70px + 15px);
+            min-height: calc(75px);
+            border: 3px solid #00FFCB;
+            box-shadow: 0 0 60px rgba(0,255,203,.64);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all .3s ease-in-out 0s;
+          }
+          
+          .button:hover, .button:focus {
+            color: #313133;
+            transform: translateY(-6px);
+          }
+          
+          button:hover::before, button:focus::before {
+            opacity: 1;
+          }
+          
+          button::after {
+            content: '';
+            width: 30px; height: 30px;
+            border-radius: 100%;
+            border: 6px solid #00FFCB;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring 1.5s infinite;
+          }
+          
+          button:hover::after, button:focus::after {
+            animation: none;
+            display: none;
+          }
+          
+          @keyframes ring {
+            0% {
+              width: 30px;
+              height: 30px;
+              opacity: 1;
+            }
+            100% {
+              width: 300px;
+              height: 300px;
+              opacity: 0;
+            }
+          }
+          .social:hover {
+            opacity:1;
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+          }
+          
+          .social {
+            opacity:0.9;
+            -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.8);
+            -o-transform: scale(0.8);
+            -webkit-transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+          }
+          
+          .social-fb {
+            color: #3B5998;
+          } 
+          
+          .social-gp {
+            color: #d34836;
+          }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <button class="button">Submit</button>
+      </div>
+
+       <!-- <div class="wrap">
+        <button type="submit" class="button" href="https://blog.imocha.io/python-interview-questions-and-answers">Submit</button>
+      </div> -->
+
+      <div class="">
+      
+        <button class="button">
+            <a type="button" style='font-size:50px' title="Contact Us" class="far">&#xf4ad;</a>
+      </button> 
+      </div>
+
+      <!-- <div class="button ">
+        <button>
+        <a href="#" title="Twitter">
+          <i class="fa fa-twitter-square "></i>
+        </a>
+      </button>
+      </div> -->
+
+    
+
+       <!-- <div class="button button5">
+        <button type="submit" title="contact us" href="https://blog.imocha.io/python-interview-questions-and-answers" class="far">&#xf075;</button>
+      </div> -->
+
+  
+<!-- 
+      <div class="button button5">
+      
+        <a type="button" href="http://127.0.0.1:5000/crt" title="Contact Us" 
+        class=""><i class="fab fa-facebook-f"></i></a>
+      </div>  -->
+      
+ 
+    
+</body>
+</html>

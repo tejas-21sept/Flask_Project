@@ -1,0 +1,33 @@
+{% extends "footer.html" %}
+
+{%block body_content %}
+<style>
+  * {
+  box-sizing: border-box;
+  }
+  .imageColumn {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  }
+  h1{
+  text-align: center;
+  }
+  </style>
+  <!-- <h1>Images Aligned Side by Side example</h1> -->
+  <div class="alignRow">
+  <div class="imageColumn">
+  <img src="static/01.webp" alt="Snow" style="width:78%">
+  </div>
+  <div class="imageColumn">
+  <img src="static/1.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="imageColumn">
+  <img src="static/2.jpg" alt="Mountains" style="width:100%">
+  </div>
+  <div class="imageColumn">
+  <img src="static/3_1.jpg" alt="Snow" style="width:100%">
+  </div>
+  </div>
+    
+{% endblock%}

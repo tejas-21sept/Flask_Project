@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+        <title>Homepage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        (<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{{url_for('static',filename='mystyle.css')}}" >
+        
+        <style>
+          body {
+            width : 100% ;
+            height : auto ;
+          }
+        </style>
+    {% endblock %}
+</head>
+<body>
+  {% block fix_body %}
+    <div id="header" class="header">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Om Ply</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products</a>
+              <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Products <span class="caret"></span></a> -->
+              <ul class="dropdown-menu">
+                <li><a href="/ply">Plywood</a></li>
+                <li><a href="#">Sunmica</a></li>
+                <li><a href="#">Hardware</a></li>
+              </ul>
+            </li>
+            <li><a href="/about">About Us</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" action="/action_page.php">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Google" name="search">
+              <div class="input-group-btn">
+                <button type="Submit" class="btn btn-default" >
+                  <i class="glyphicon glyphicon-search">G</i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+  {% endblock %}
+  <!-- {% block body %}
+
+  {% endblock %} -->
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+{% extends "nav_bar.html" %}
+
+{% block head %}
+    <body>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </body>
+{% endblock %}
+{%block body%}
+<style>
+  .foot{
+    margin-left: 0px;  
+  }
+  .foot2{
+    margin-left: 1.65em;
+  }
+  .sec{
+    width: 9px;
+  }
+  .sec{
+    width: 48.8px;
+  }
+ 
+  .coln{
+    
+    background-color: oldlace;
+    
+  }
+  .last{
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+
+</style>
+
+{% block body_content %}
+
+{% endblock %}
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="">
+
+  <footer class="text-white text-center text-lg-start coln">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">About company</h5>
+
+          <p>
+            At xyz Softwares Pvt Ltd., we deliver creative products and services keeping in focus on Information Technology.
+          </p>
+
+          <p>
+            We specialize in Web and App Development, Graphic Design, Digital Marketing.
+          </p>
+
+          <div class="mt-4">
+            <!-- Facebook -->
+            <a type="button" href="https://www.facebook.com/" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+            <!-- Dribbble -->
+            <a type="button" href="https://www.instagram.com/accounts/login/" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-instagram"></i></i></a>
+            <!-- Twitter -->
+            <a type="button" href="https://www.linkedin.com/home" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-linkedin"></i></a>
+            <!-- Google + -->
+            <a type="button" href="https://www.youtube.com/" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-youtube"></i></a>
+            <!-- Linkedin --> 
+          </div>
+        </div> 
+        <!--Grid column--> 
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+          <div class="form-outline form-white mb-4">
+            <input type="text" id="formControlLg" class="form-control form-control-lg">
+            <label class="form-label foot" for="formControlLg" >Search</label>
+          <div class="form-notch"><div class="form-notch-leading sec"></div><div class="form-notch-middle sec2" ></div><div class="form-notch-trailing"></div></div></div>
+
+          <ul class="fa-ul foot2" >
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Chanakya Nagar, 2nd Floor,
+                Aambegao Road, Mehta Nagar,
+                Mumbai - 400403</span>
+            </li><br>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@enquiry.com</span>
+            </li><br>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+91 9976 xxx xxx</span>
+            </li>
+            <!-- <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+            </li> -->
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+          <table class="table text-center text-white">
+            <tbody class="font-weight-normal">
+              <tr>
+                <td>Mon - Fri:</td>
+                <td>9am - 6pm</td>
+              </tr>
+              <!-- <tr>
+                <td>Fri - Sat:</td>
+                <td>8am - 1am</td>
+              </tr> -->
+              <tr>
+                <td>Sat - Sun:</td>
+                <td>9am - 10pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3 last">
+      All Rights Reserved ©
+      <a class="text-white" href="https://www.python.org/">XYZ Softwares Pvt Ltd.</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+</div>
+<!-- End of .container -->
+{% endblock %}

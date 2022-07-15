@@ -1,0 +1,30 @@
+{% extends "nav_bar.html" %}
+
+{%block body%}
+
+{% if request.endpoint == 'ply' %}
+<div class="isolate">
+    <link rel="stylesheet"  href="{{url_for('static',filename='index.css')}}">
+  </div>    
+{% endif %}
+<h1 > Welcome to Flask.</h1>
+    <h3> Available Plywood range.</h3><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div>
+            <div style="float: left">
+                <img src="static/mm18.jpg"  alt="18 MM PLY SHEET"/>
+                </div>
+                <div>
+                    18 MM plywood sheet made up of pine wood of Amazon lo
+                </div>
+        </div><br><br>
+        
+       
+        <img  src="static/mm25.jpg"  alt="25 MM PLY SHEET" ><br><br>
+        
+        <img src="static/mm12.jpg"  alt="12 MM PLY SHEET"><br><br>
+       
+        <img " src="static/mm10.jpg"  alt="10 MM PLY SHEET"><br><br>
+        
+        <img src="static/flexi.jpg"  alt="Flexible Ply Sheet">
+    
+{% endblock%}
